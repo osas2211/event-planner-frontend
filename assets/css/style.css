@@ -433,7 +433,7 @@ form{
 /* ================== PAST EVENT  ============== */
 
 .past_events .event_showcase{
-    background: url(assets/img/past.jpg) no-repeat;
+    background: url("../img/past.jpg") no-repeat;
     background-size: cover;
     margin: 0;
 }
