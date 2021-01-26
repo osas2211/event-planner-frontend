@@ -507,20 +507,35 @@ form{
 
 .participants ol{
     padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0;
-    grid-gap: 10px;
+    list-style-position: inside;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
 }
 .participants li{
-    padding: 0.5rem;
+    padding: 1rem;
     text-transform: capitalize;
     font-size: 1.1rem;
     opacity: 0.8;
 }
 
 
+.not_available{
+    padding: 4.3rem;
+    text-align: center;
+}
+
+.not_available p{
+    padding: 4rem;
+    border: 1px solid var(--third-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #424B54;
+    word-spacing: 0.2rem;
+    line-height: 2.8rem;
+}
 /* ================== FOOTER  ============== */
 
 #main-footer{
@@ -597,8 +612,8 @@ form{
         flex-direction: column;
         margin-left: 3rem;
     }
-
-    .participants ol{
-        grid-template-columns: repeat(4, 1fr);
+    .not_available p{
+        line-height: 3.1rem;
     }
+
 }
